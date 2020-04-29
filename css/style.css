@@ -170,15 +170,15 @@ time {
 }
 
 /*
-<div class="btnRegistration"><a href="http://kharkivcss4.2event.com/" onClick="_gaq.push(['_trackEvent', 'Btns', 'Buy', 'Header']);" target="_blank">Купити квиток</a></div>
+<div class="btnStream"><a href="http://kharkivcss4.2event.com/" onClick="_gaq.push(['_trackEvent', 'Btns', 'Buy', 'Header']);" target="_blank">Купити квиток</a></div>
 */
-.btnRegistration {
+.btnStream {
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	padding-bottom: 70px;
 }
-.btnRegistration a {
+.btnStream a {
 	background: #009933;
 	box-shadow: rgba(0,0,0,0.15) 0 3px 5px;
 	border-radius: 5px;
@@ -194,11 +194,11 @@ time {
 	margin-top: 10px;
 }
 
-.btnRegistration a:hover {
+.btnStream a:hover {
 	background: #00bc52;
 }
 
-.btnRegistration a:focus {
+.btnStream a:focus {
 	background: #39b54a;
 	box-shadow: inset rgba(0,0,0,0.21) 0 2px 2px;
 }
@@ -239,7 +239,7 @@ time {
 	color:#fff;
 }
 
-.mainMenu ul li:not(.btnRegistration) a {
+.mainMenu ul li:not(.btnStream) a {
 	position: relative;
 	height: 76px;
 	line-height: 86px;
@@ -250,15 +250,15 @@ time {
 	text-align: center;
 }
 
-.mainMenu ul li:not(.btnRegistration) a:hover {
+.mainMenu ul li:not(.btnStream) a:hover {
 	color: #a4b9fb;
 }
 
-.mainMenu ul li:not(.btnRegistration) a:hover::before {
+.mainMenu ul li:not(.btnStream) a:hover::before {
 	background: #a4b9fb;
 }
 
-.mainMenu ul li.btnRegistration {
+.mainMenu ul li.btnStream {
 	margin: 0 35px;
 }
 
@@ -315,7 +315,7 @@ time {
 	padding: 0 10px 180px 10px;
 }
 
-.header .btnRegistration {
+.header .btnStream {
 	padding: 0;
 }
 
@@ -1018,7 +1018,7 @@ time {
 }
 
 @media screen and (max-width: 1100px) {
-	.mainMenu ul li.btnRegistration {
+	.mainMenu ul li.btnStream {
 		margin: 0;
 	}
 
@@ -1036,7 +1036,7 @@ time {
 		font-size: 18px;
 	}
 
-	.mainMenu ul li:not(.btnRegistration) a {
+	.mainMenu ul li:not(.btnStream) a {
 		font-size: 18px;
 		width: 98px;
 		padding: 0 15px;
@@ -1093,12 +1093,16 @@ time {
 		font-size: 15px;
 	}
 	
-	.mainMenu ul li:not(.btnRegistration) a {
+	.mainMenu ul li:not(.btnStream) a {
 		display: none;
 	}
-	.mainMenu ul li.btnRegistration {
+	.mainMenu ul li.btnStream {
 		position: static;
 		margin: 15px auto;
+	}
+
+	.btnStream a {
+		margin-top: 0;
 	}
 
 	.header {
@@ -1106,7 +1110,7 @@ time {
 		background-size: 470px auto;
 	}
 	.logo {
-		padding: 75px 0 0 0;
+		padding: 35px 0 0 0;
 	}
 	.logo a {
 		font-size: 48px;
@@ -1131,10 +1135,6 @@ time {
 		font-size: 35px;
 		padding-bottom: 50px;
 		max-width: 420px;
-	}
-	.descriptionHeader br,
-	.locationHeader br {
-		display: none;
 	}
 
 	.sectionSpeakers .item {
